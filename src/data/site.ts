@@ -1,0 +1,146 @@
+import type { EventItem, ProjectItem, ResourceItem, TeamMember } from "@/types";
+
+export const navItems = [
+  { label: "Home", href: "/" },
+  { label: "Events", href: "/events" },
+  { label: "Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Projects", href: "/projects" },
+  { label: "Resources", href: "/resources" },
+];
+
+export const events: EventItem[] = [
+  {
+    id: "evt-01",
+    slug: "codecraft-2026",
+    title: "CodeCraft 2026",
+    description: "A focused coding sprint where teams build practical solutions under expert mentorship.",
+    date: "22 August 2026",
+    time: "9:30 AM – 5:00 PM",
+    venue: "Software Engineering Lab",
+    category: "Hackathon",
+    status: "open",
+    featured: true,
+    seats: 120,
+    accent: "from-[#c79a55] to-[#f0d49f]",
+  },
+  {
+    id: "evt-02",
+    slug: "design-systems-workshop",
+    title: "Design Systems Workshop",
+    description: "Learn how consistent components, tokens and interaction rules create stronger digital products.",
+    date: "29 August 2026",
+    time: "11:00 AM – 1:30 PM",
+    venue: "Seminar Hall 2",
+    category: "Workshop",
+    status: "upcoming",
+    seats: 80,
+    accent: "from-[#5076a6] to-[#9ab7d8]",
+  },
+  {
+    id: "evt-03",
+    slug: "open-source-orientation",
+    title: "Open Source Orientation",
+    description: "A practical introduction to GitHub workflows, contribution etiquette and real project collaboration.",
+    date: "5 September 2026",
+    time: "2:00 PM – 4:00 PM",
+    venue: "Auditorium",
+    category: "Orientation",
+    status: "upcoming",
+    seats: 180,
+    accent: "from-[#66755d] to-[#b8c8a9]",
+  },
+  {
+    id: "evt-04",
+    slug: "alumni-tech-dialogue",
+    title: "Alumni Tech Dialogue",
+    description: "A candid discussion with graduates about engineering careers, teams and real-world expectations.",
+    date: "12 September 2026",
+    time: "4:30 PM – 6:00 PM",
+    venue: "Online + Seminar Hall",
+    category: "Talk",
+    status: "upcoming",
+    seats: 220,
+    accent: "from-[#835f76] to-[#c9a8c0]",
+  },
+  {
+    id: "evt-05",
+    slug: "web-week-2026",
+    title: "Web Week 2026",
+    description: "A week of frontend challenges, peer reviews and short talks on modern web engineering.",
+    date: "18 July 2026",
+    time: "Completed",
+    venue: "Department Labs",
+    category: "Competition",
+    status: "completed",
+    accent: "from-[#8a6940] to-[#cab48e]",
+  },
+  {
+    id: "evt-06",
+    slug: "project-showcase-spring",
+    title: "Project Showcase",
+    description: "Student teams presented working prototypes, research experiments and product ideas.",
+    date: "2 May 2026",
+    time: "Completed",
+    venue: "MITAOE Campus",
+    category: "Showcase",
+    status: "completed",
+    accent: "from-[#405d7d] to-[#8aa2bd]",
+  },
+];
+
+export const projects: ProjectItem[] = [
+  {
+    id: "prj-01",
+    title: "SESA Digital Platform",
+    category: "Web Platform",
+    description: "A maintainable home for events, projects, resources and the association’s evolving identity.",
+    tech: ["Next.js", "TypeScript", "Supabase"],
+    status: "Active",
+  },
+  {
+    id: "prj-02",
+    title: "Peer Learning Circles",
+    category: "Community",
+    description: "Small student-led groups that turn difficult subjects into consistent collaborative practice.",
+    tech: ["Mentorship", "Weekly Sessions", "Open Notes"],
+    status: "Active",
+  },
+  {
+    id: "prj-03",
+    title: "Project Archive",
+    category: "Knowledge Base",
+    description: "A searchable archive of student work, implementation notes and reusable technical learnings.",
+    tech: ["Documentation", "GitHub", "Case Studies"],
+    status: "Concept",
+  },
+];
+
+export const team: TeamMember[] = [
+  { id: "tm-01", name: "Faculty Coordinator", role: "Faculty Mentor", group: "Faculty", initials: "FC", bio: "Guides the association’s academic alignment, continuity and institutional coordination." },
+  { id: "tm-02", name: "President", role: "Student Lead", group: "Core Committee", initials: "PR", bio: "Leads the association, aligns teams and represents SESA across department initiatives." },
+  { id: "tm-03", name: "Vice President", role: "Operations Lead", group: "Core Committee", initials: "VP", bio: "Coordinates execution, team communication and delivery across active initiatives." },
+  { id: "tm-04", name: "Technical Head", role: "Engineering Lead", group: "Technical Team", initials: "TH", bio: "Owns technical direction, code quality and engineering mentorship for association projects." },
+  { id: "tm-05", name: "Design Head", role: "Creative Lead", group: "Design Team", initials: "DH", bio: "Builds the visual language for events, digital products and association communication." },
+  { id: "tm-06", name: "Events Head", role: "Programme Lead", group: "Events Team", initials: "EH", bio: "Plans practical, well-run events with clear outcomes for students and collaborators." },
+  { id: "tm-07", name: "Content Head", role: "Editorial Lead", group: "Content Team", initials: "CH", bio: "Maintains clear messaging, documentation and stories across SESA platforms." },
+  { id: "tm-08", name: "Outreach Head", role: "Community Lead", group: "Outreach Team", initials: "OH", bio: "Builds partnerships and keeps the student community connected to opportunities." },
+];
+
+export const resources: ResourceItem[] = [
+  { id: "res-01", title: "Frontend Engineering Starter Pack", type: "Guide", description: "A structured path covering HTML, CSS, JavaScript, React and practical project habits.", meta: "12 modules" },
+  { id: "res-02", title: "Git & GitHub Team Workflow", type: "Playbook", description: "Branching, pull requests, reviews, issues and clean handover practices for student teams.", meta: "Updated July 2026" },
+  { id: "res-03", title: "Event Planning Checklist", type: "Template", description: "A reusable checklist for permissions, logistics, registrations, communication and reporting.", meta: "Printable" },
+  { id: "res-04", title: "Project Documentation Standard", type: "Standard", description: "A simple documentation structure so future batches can understand and continue projects.", meta: "Version 1.0" },
+  { id: "res-05", title: "Software Engineering Reading List", type: "Collection", description: "Selected references for design, architecture, testing, databases and product thinking.", meta: "24 resources" },
+  { id: "res-06", title: "Presentation & Demo Guide", type: "Guide", description: "How to explain a technical project clearly without overselling unfinished work.", meta: "8 min read" },
+];
+
+export const galleryItems = [
+  { title: "Project Expo", category: "Showcase", label: "Build in public", gradient: "from-[#163a62] via-[#234f7a] to-[#b18345]" },
+  { title: "Coding Sprint", category: "Hackathon", label: "Solve together", gradient: "from-[#101d36] via-[#4f3a63] to-[#d4a15d]" },
+  { title: "Expert Session", category: "Talk", label: "Learn from practice", gradient: "from-[#24364e] via-[#5d6f65] to-[#d4bd93]" },
+  { title: "Design Workshop", category: "Workshop", label: "Make ideas visible", gradient: "from-[#122f50] via-[#73516d] to-[#c99956]" },
+  { title: "Team Meet", category: "Community", label: "Work with clarity", gradient: "from-[#142746] via-[#385c73] to-[#a27b49]" },
+  { title: "Open Source Day", category: "Community", label: "Contribute beyond campus", gradient: "from-[#1b3551] via-[#3c6b65] to-[#b98c4a]" },
+];
